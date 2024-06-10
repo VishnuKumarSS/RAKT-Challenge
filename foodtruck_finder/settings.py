@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'foodtruck_finder_api'
+    'foodtruck_finder_api',
+    'django_extensions' # To enable scripts (Use case eg: python manage.py runscript <pythonfile>)
 ]
 
 MIDDLEWARE = [
