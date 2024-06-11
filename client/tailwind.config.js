@@ -11,6 +11,7 @@ export default {
         card: "#374151",
         textPrimary: "#e5e7eb",
         textSecondary: "#9ca3af",
+        textError: "#f87171",
       },
       fontFamily: {
         space: ["Space Grotesk", "sans-serif"],

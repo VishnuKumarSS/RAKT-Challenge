@@ -2,7 +2,7 @@ import { useState } from "react";
 import FoodTruck from "./FoodTruck";
 
 const FoodTruckList = () => {
-  const [foodTrucks, setFoodTrucks] = useState([]);
+  const [foodTrucks, setFoodTrucks] = useState(null);
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
 
@@ -42,17 +42,24 @@ const FoodTruckList = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        {foodTrucks.map((truck) => (
-          <FoodTruck
-            key={truck.name}
-            name={truck.name}
-            latitude={truck.latitude}
-            longitude={truck.longitude}
-            description={truck.description}
-          />
+      {foodTrucks !== null &&
+        (foodTrucks.length === 0 ? (
+          <p className="text-textError text-center text-xl font-bricolage">
+            No food trucks nearby.
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {foodTrucks.map((truck) => (
+              <FoodTruck
+                key={truck.name}
+                name={truck.name}
+                latitude={truck.latitude}
+                longitude={truck.longitude}
+                description={truck.description}
+              />
+            ))}
+          </div>
         ))}
-      </div>
     </div>
   );
 };
