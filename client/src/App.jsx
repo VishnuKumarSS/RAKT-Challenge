@@ -1,8 +1,11 @@
+import FoodTruckList from "./components/FoodTruckList";
+import "./index.css";
+
 function App() {
   return (
-    <>
-      <div className="text-black font-bold">Hello</div>
-    </>
+    <div className="App">
+      <FoodTruckList />
+    </div>
   );
 }
 
