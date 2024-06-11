@@ -1,5 +1,14 @@
 # Food Truck Finder
 
+## Tech Stack
+<code>Python</code>
+<code>Javascript</code>
+<code>Django</code>
+<code>React</code>
+<code>Tailwind</code>
+
+## Server side config
+
 ### 1. Create and activate a virtual environment:
 ```bash
 python -m venv venv
@@ -30,7 +39,7 @@ python manage.py runserver
 ```
 
 
-## API Usage
+## Server API Usage
 
 **Endpoint usage:** Get Nearby Food Trucks
 
