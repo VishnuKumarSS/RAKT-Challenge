@@ -38,6 +38,17 @@ python manage.py runscript import_food_trucks
 python manage.py runserver
 ```
 
+## Client side config
+
+### 1. Install npm packages:
+```bash
+npm install
+```
+
+### 2. Run the frontend:
+```bash
+npm run dev
+```
 
 ## Server API Usage
 
