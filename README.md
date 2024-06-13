@@ -86,3 +86,14 @@ Example Response:
     ...
 ]
 ```
+
+## To get the data from CLI itself, Use the command below
+
+```bash
+# Make sure the server is running
+python manage.py runserver
+
+# Replace the latitude and longitude with the actual values
+python manage.py runscript find_food_trucks --script-args <latitude> <longitude>
+```
+
