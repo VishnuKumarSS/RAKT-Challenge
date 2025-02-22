@@ -1,7 +1,7 @@
 # Food Truck Finder
 
 ## Tech Stack
-<code>Python</code>
+<code>Python 3.11.9</code>
 <code>Javascript</code>
 <code>Django</code>
 <code>React</code>
@@ -11,7 +11,7 @@
 
 ### 1. Create and activate a virtual environment:
 ```bash
-python -m venv venv
+python3.11.9 -m venv venv
 source venv/bin/activate   # On Windows use `venv\Scripts\activate`
 ```
 
